@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.ligaargentina.babyfutbol"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ligaargentina.babyfutbol"
@@ -52,6 +52,8 @@ dependencies {
     implementation(libs.volley)
     implementation(libs.monitor)
     implementation(libs.junit.ktx)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
     androidTestImplementation(libs.junit)
 }
 
