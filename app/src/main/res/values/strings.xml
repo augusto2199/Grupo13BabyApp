@@ -17,7 +17,15 @@
     <string name="ver_contrasena">Ver contraseña</string>
     <string name="factor">factor de seguridad</string>
     <string name="admin">ADMINISTRADOR</string>
-
+    <string name="gesUsuarios">Gestionar Usuarios</string>
+    <string name="gesArbitros">Gestionar Arbitros</string>
+    <string name="gesJugadores">Gestionar Jugadores</string>
+    <string name="gesEntrenadores">Gestionar Entrenadores</string>
+    <string name="gesEquipos">Gestionar Equipos</string>
+    <string name="gesPartidos">Gestionar Partidos</string>
+    <string name="publicar">Publicar Noticias</string>
+    <string name="panel">Panel de Administrador</string>
+    <string name="cerrar">Log out</string>
 
 
 </resources>

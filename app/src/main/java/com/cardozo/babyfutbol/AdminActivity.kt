@@ -1,11 +1,15 @@
 package com.cardozo.babyfutbol
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.ligaargentina.babyfutbol.GestionarusuariosActivity
 import com.ligaargentina.babyfutbol.R
+import com.ligaargentina.babyfutbol.RecuperoActivity
 
 class AdminActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,4 +22,10 @@ class AdminActivity : AppCompatActivity() {
             insets
         }
     }
+
+    fun Gestion(view: View) {
+        val intent = Intent(this, GestionarusuariosActivity::class.java)
+        startActivity(intent)
+    }
+
 }

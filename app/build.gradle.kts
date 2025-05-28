@@ -15,6 +15,7 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -40,10 +41,11 @@ dependencies {
     // Firebase BOM (controla las versiones)
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 
+    implementation("com.google.android.material:material:1.11.0")
+
     // Módulos de Firebase
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-database-ktx")
-
 
     // AndroidX y Material
     implementation("androidx.core:core-ktx:1.12.0")
@@ -54,6 +56,9 @@ dependencies {
     implementation(libs.junit.ktx)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    // RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+
     androidTestImplementation(libs.junit)
 }
-

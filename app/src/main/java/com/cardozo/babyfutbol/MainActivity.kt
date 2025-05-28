@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         // Log para ver el contenido antes de enviar
         Log.d("LOGIN_REQUEST", "Email: $email, Password: $password")
 
-        val url = "http://10.0.2.2/api/login.php"  // Cambiar IP si es necesario
+        val url = "http://10.0.2.2/api/login.php"
 
         val requestQueue = Volley.newRequestQueue(this)
 

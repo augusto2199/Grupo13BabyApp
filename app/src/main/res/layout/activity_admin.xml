@@ -1,44 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.cardozo.babyfutbol.AdminActivity"
-    android:padding="24dp">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/gris_medio"
+    tools:context="com.cardozo.babyfutbol.AdminActivity">
 
-    <TextView
-        android:id="@+id/admin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Panel de Administrador"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/azul"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-        android:id="@+id/btnGestionUsuarios"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Gestionar Usuarios"
-        app:layout_constraintTop_toBottomOf="@id/admin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        <!-- Título centrado -->
+        <TextView
+            android:id="@+id/tituloNavbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnGestionPartidos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Gestionar Partidos"
-        app:layout_constraintTop_toBottomOf="@id/btnGestionUsuarios"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <!-- Nombre del usuario alineado a la derecha -->
+        <TextView
+            android:id="@+id/nombreUsuarioNavbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Título debajo de la barra -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/panel"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/navbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Botones con ancho fijo de 200dp -->
+        <Button
+            android:id="@+id/btnGestionUsuarios"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gesUsuarios"
+            android:onClick="Gestion"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnGestionArbitros"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gesArbitros"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnGestionUsuarios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnGestionJugadores"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gesJugadores"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnGestionArbitros"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnGestionEntrenadores"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gesEntrenadores"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnGestionJugadores"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnGestionEquipos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gesEquipos"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnGestionEntrenadores"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnGestionPartidos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gesPartidos"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnGestionEquipos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/publicar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/publicar"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnGestionPartidos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnEstadisticas"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Ver Estadísticas"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/publicar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnGestionTorneos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Gestionar Torneos"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnEstadisticas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

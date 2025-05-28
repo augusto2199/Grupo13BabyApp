@@ -61,6 +61,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/usuario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -84,6 +85,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

@@ -16,23 +16,26 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="com.cardozo.babyfutbol.UsuarioActivity"
+            android:name=".GestionarusuariosActivity"
             android:exported="false" />
+        <activity
+            android:name="com.cardozo.babyfutbol.UsuarioActivity"
+            android:exported="true" />
         <activity
             android:name="com.cardozo.babyfutbol.JugadorActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.cardozo.babyfutbol.EntrenadorActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.cardozo.babyfutbol.ArbitroActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.cardozo.babyfutbol.AdminActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RecuperoActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RegistroActivity"
             android:exported="true" />
