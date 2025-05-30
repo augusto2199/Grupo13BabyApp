@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Liga Argentina Baby Futbol</string>
+    <string name="usuario">Ingrese su usuario</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="titulo">Crea tu cuenta</string>
+    <string name="IniciarSesion">INICIAR SESION</string>
+    <string name="ingreseContrasenia">Ingrese su contraseña</string>
+    <string name="olvidoDeContrasenia">¿Has olvidado tu contraseña?</string>
+    <string name="re_title">Recuperemos tu contraseña</string>
+    <string name="derechosReservados">Todos los derechos reservados</string>
+    <string name="recuperarContrasenia">Recuperar contraseña</string>
+    <string name="legenda">Es el momento de crear tu cuenta para disfrutar al maximo de la Liga Argentina de Baby Futbol</string>
+    <string name="volver">VOLVER</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="recupero">CAMBIAR CONTRASEÑA</string>
+    <string name="tituloRecupero">Ingresa tu correo y te enviaremos las instrucciones para que puedas reestablecer tu contraseña</string>
+    <string name="ver_contrasena">Ver contraseña</string>
+    <string name="factor">factor de seguridad</string>
+    <string name="admin">ADMINISTRADOR</string>
+    <string name="gesUsuarios">Gestionar Usuarios</string>
+    <string name="gesArbitros">Gestionar Arbitros</string>
+    <string name="gesJugadores">Gestionar Jugadores</string>
+    <string name="gesEntrenadores">Gestionar Entrenadores</string>
+    <string name="gesEquipos">Gestionar Equipos</string>
+    <string name="gesPartidos">Gestionar Partidos</string>
+    <string name="publicar">Publicar Noticias</string>
+    <string name="panel">Panel de Administrador</string>
+    <string name="cerrar">Log out</string>
+
+
+</resources>
