@@ -1,5 +1,6 @@
 package com.ligaargentina.babyfutbol
 
+import Usuario
 import UsuarioAdapter
 import android.content.Intent
 import android.os.Bundle
@@ -34,6 +35,7 @@ class GestionarusuariosActivity : AppCompatActivity() {
     }
 
     private fun cargarUsuarios() {
+        usuarioList.clear()  // Limpiar lista antes de cargar
         val url = "http://10.0.2.2/api/usuarios.php"
         val requestQueue = Volley.newRequestQueue(this)
 
@@ -49,7 +51,6 @@ class GestionarusuariosActivity : AppCompatActivity() {
                         val apellido = usuarioJson.getString("apellido")
                         val email = usuarioJson.getString("email")
                         val edad = usuarioJson.getInt("edad")
-
 
                         val usuario = Usuario(id, nombre, apellido, email, edad)
                         usuarioList.add(usuario)

@@ -1,11 +1,13 @@
-package com.ligaargentina.babyfutbol
-
 data class Usuario(
-    val id: Int,
+    var id: Int,
     var nombre: String,
     var apellido: String,
     var email: String,
     var edad: Int,
-    var rol_id: Int = 2
+    var roles_id: Int = 2,
+    var arbitro_id: Int? = 5,
+    var jugador_id: Int? = null,
+    var entrenador_id: Int? = null
 
-    )
+
+)

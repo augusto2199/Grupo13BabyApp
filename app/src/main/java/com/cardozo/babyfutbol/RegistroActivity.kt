@@ -68,7 +68,7 @@ class RegistroActivity : AppCompatActivity() {
         params["email"] = email
         params["password"] = password
         params["edad"] = edad.toString()
-        params["rol_id"] = "2" // ← Este es el rol por defecto
+        params["roles_id"] = "2" // ← Este es el rol por defecto
 
 
         val request = object : StringRequest(Method.POST, url,
@@ -153,3 +153,4 @@ class RegistroActivity : AppCompatActivity() {
         registrarUsuario(nombre, apellido, email, password, edadInt!!)
     }
 }
+

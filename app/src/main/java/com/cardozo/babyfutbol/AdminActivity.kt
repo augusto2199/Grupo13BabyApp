@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.ligaargentina.babyfutbol.GestionararbitrosActivity
 import com.ligaargentina.babyfutbol.GestionarusuariosActivity
 import com.ligaargentina.babyfutbol.MainActivity
 import com.ligaargentina.babyfutbol.R
@@ -45,6 +46,11 @@ class AdminActivity : AppCompatActivity() {
 
     fun Gestion(view: View) {
         val intent = Intent(this, GestionarusuariosActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun GestionArbitros(view: View) {
+        val intent = Intent(this, GestionararbitrosActivity::class.java)
         startActivity(intent)
     }
 
